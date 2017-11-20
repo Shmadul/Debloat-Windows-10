@@ -1,5 +1,5 @@
 # Debloat Windows 10
-
+# Updated By @shmadul
 **Note about Creators Update:** These scripts have *not* been tested with the
 Creators Update. Anything may happen, be prepared. I'll look into relevant
 changes and recent issues when the update is released / pushed on to everyone.
@@ -38,12 +38,12 @@ you'll probably want the most recent version anyway.
 
 Enable execution of PowerShell scripts:
 
-    PS> Set-ExecutionPolicy Unrestricted
+    Set-ExecutionPolicy Unrestricted
 
 Unblock PowerShell scripts and modules within this directory:
 
-    PS > ls -Recurse *.ps1 | Unblock-File
-    PS > ls -Recurse *.psm1 | Unblock-File
+    ls -Recurse *.ps1 | Unblock-File
+    ls -Recurse *.psm1 | Unblock-File
 
 ## Usage
 
@@ -52,9 +52,9 @@ Unblock PowerShell scripts and modules within this directory:
 3. Run the scripts from a PowerShell with administrator priviledges (Explorer
    `Files > Open Windows PowerShell > Open Windows PowerShell as
    administrator`)
-4. `PS > Restart-Computer`
+4. `Restart-Computer`
 5. Run `disable-windows-defender.ps1` one more time.
-6. `PS > Restart-Computer`
+6. `Restart-Computer`
 
 ## Startmenu
 
